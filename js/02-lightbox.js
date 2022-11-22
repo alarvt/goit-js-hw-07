@@ -24,10 +24,6 @@ const lightbox = new SimpleLightbox(".gallery a", {
 
 
 
-
-
-
-/* function ImageClick(e) {
     e.preventDefault();
     if (e.target.nodeName !== "IMG") {
       return;
