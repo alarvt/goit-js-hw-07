@@ -19,7 +19,8 @@ const gallery = document.querySelector(".gallery");
 gallery.insertAdjacentHTML("beforeend", galleryList);
 
 const lightbox = new SimpleLightbox(".gallery a", {
-  
+  captionsData: "alt",
+  captoinsDelay: 250,
 });
 
 
@@ -27,19 +28,3 @@ const lightbox = new SimpleLightbox(".gallery a", {
 
 
 
-/* function ImageClick(e) {
-    e.preventDefault();
-    if (e.target.nodeName !== "IMG") {
-      return;
-    }
-    const instance = basicLightbox.create(
-      `<img src="${e.target.dataset.source}" width="800" height="600">`,
-    );
-    instance.show();
-
-    gallery.addEventListener("keydown", (e) => {
-        if (e.key === "Escape") {
-            instance.close();
-        }
-    });
-}; */
